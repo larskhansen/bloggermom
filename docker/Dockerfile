@@ -29,10 +29,10 @@ RUN composer install
 
 # Setting up the theme. Installing the sass bootstrap repo
 # and building the scss files.
-RUN cd /var/www/web/themes/custom/itotko_theme \
-    && git clone https://github.com/twbs/bootstrap-sass.git bootstrap \
-    && mkdir css \
-    && sass scss/style.scss css/style.css
+# RUN cd /var/www/web/themes/custom/itotko_theme \
+#    && git clone https://github.com/twbs/bootstrap-sass.git bootstrap \
+#    && mkdir css \
+#    && sass scss/style.scss css/style.css
 
 # Now to the actual docker image
 FROM php:7.4-apache-buster
