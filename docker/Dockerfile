@@ -89,6 +89,7 @@ ADD docker/settings.php /var/www/web/sites/default/settings.php
 
 # The startup script, this also starts the apache_foreground script.
 ADD docker/start-bloggermom /usr/local/bin/
+RUN chmod +x /usr/local/bin/start-bloggermom
 
 # Set the working directory.
 WORKDIR /var/www
