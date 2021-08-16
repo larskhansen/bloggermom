@@ -1,0 +1,22 @@
+uuid: 822d82e4-eb62-4325-83cb-10964b1c7c13
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: blog_indlaeg
+label: 'Blog indlæg'
+type: 'canonical_entities:node'
+pattern: '/blog/[current-date:html_date]/[node:title]'
+selection_criteria:
+  904aaacc-ecb6-4f97-bc97-94db5421ee73:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 904aaacc-ecb6-4f97-bc97-94db5421ee73
+selection_logic: and
+weight: -5
+relationships: {  }

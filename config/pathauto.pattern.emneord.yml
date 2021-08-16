@@ -1,0 +1,23 @@
+uuid: b0e60e6b-eda5-4879-9755-cb4169c6ebe4
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: emneord
+label: Emneord
+type: 'canonical_entities:taxonomy_term'
+pattern: '/emne/[term:name]'
+selection_criteria:
+  316f6671-e8c5-431a-89b4-edeb71fe2213:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      tags: tags
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 316f6671-e8c5-431a-89b4-edeb71fe2213
+selection_logic: and
+weight: -5
+relationships: {  }
